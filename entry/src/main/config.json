@@ -1,0 +1,89 @@
+{
+  "app": {
+    "bundleName": "com.huawei.sample.harmony.location",
+    "vendor": "huawei",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Release"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.huawei.harmony.location",
+    "name": "com.huawei.sample.harmony.location.LocationApplication",
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "portrait",
+        "name": "com.huawei.sample.harmony.location.ability.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:app_name",
+        "type": "page",
+        "visible": true,
+        "launchType": "standard"
+      },
+      {
+        "orientation": "portrait",
+        "icon": "$media:icon",
+        "name": "com.huawei.sample.harmony.location.ability.RequestLocationCallbackAbility",
+        "description": "",
+        "type": "page"
+      },
+      {
+        "orientation": "portrait",
+        "icon": "$media:icon",
+        "name": "com.huawei.sample.harmony.location.ability.GetLastLocationAbility",
+        "description": "",
+        "type": "page"
+      },
+      {
+        "orientation": "portrait",
+        "icon": "$media:icon",
+        "name": "com.huawei.sample.harmony.location.ability.GetLocationAvailabilityAbility",
+        "description": "",
+        "type": "page"
+      },
+      {
+        "orientation": "portrait",
+        "icon": "$media:icon",
+        "name": "com.huawei.sample.harmony.location.ability.CheckSettingAbility",
+        "description": "",
+        "type": "page"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.LOCATION"
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND"
+      }
+    ]
+  }
+}

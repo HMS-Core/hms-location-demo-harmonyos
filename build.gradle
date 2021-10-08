@@ -1,0 +1,68 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+
+ohos {
+    signingConfigs {
+        release {
+            storeFile file('D:\\Location Kit\\Location Service\\watch\\Sample_Key_new\\HarmonySample.p12')
+            storePassword '000000185BD7613151A78A9DE2C79FEB9162474B08C9B6AD63CECBAD6A35C48F36B39BE67B4D543F'
+            keyAlias = 'HarmonySample'
+            keyPassword '0000001814BC584E9C5C64DAF60FC0CB522FF59432AAA0873CBB522CCCE2E3A6AF3997AA2B8E50CB'
+            signAlg = 'SHA256withECDSA'
+            profile file('D:\\Location Kit\\Location Service\\watch\\Sample_Key_new\\HarmonySample.p7b')
+            certpath file('D:\\Location Kit\\Location Service\\watch\\Sample_Key_new\\HarmonySample.cer')
+        }
+    }
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        maven {
+            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-snapshot/'
+        }
+        maven {
+            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-release/'
+        }
+        maven {
+            url 'http://language.cloudartifact.dgg.dragon.tools.huawei.com/artifactory/product_maven/'
+        }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:2.4.4.2'
+        classpath 'com.huawei.ohos:decctest:1.2.4.0'
+        // 添加agconnect服务依赖
+        classpath 'com.huawei.agconnect:agcp-harmony:1.1.0.300'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+        maven {
+            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-snapshot/'
+        }
+        maven {
+            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-release/'
+        }
+        maven {
+            url 'http://language.cloudartifact.dgg.dragon.tools.huawei.com/artifactory/product_maven/'
+        }
+        jcenter()
+    }
+}

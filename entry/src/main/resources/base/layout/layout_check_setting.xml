@@ -1,0 +1,38 @@
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="32">
+
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <Button
+                ohos:id="$+id:btn_check_setting"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="#FF51A8DD"
+                ohos:layout_alignment="horizontal_center"
+                ohos:margin="5vp"
+                ohos:padding="10vp"
+                ohos:text="CheckSetting"
+                ohos:text_size="25"/>
+
+            <Text
+                ohos:id="$+id:show_location"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="horizontal_center"
+                ohos:margin="5vp"
+                ohos:text_size="25"/>
+        </DirectionalLayout>
+    </ScrollView>
+</DirectionalLayout>
