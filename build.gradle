@@ -4,13 +4,6 @@ apply plugin: 'com.huawei.ohos.app'
 ohos {
     signingConfigs {
         release {
-            storeFile file('D:\\Location Kit\\Location Service\\watch\\Sample_Key_new\\HarmonySample.p12')
-            storePassword '000000185BD7613151A78A9DE2C79FEB9162474B08C9B6AD63CECBAD6A35C48F36B39BE67B4D543F'
-            keyAlias = 'HarmonySample'
-            keyPassword '0000001814BC584E9C5C64DAF60FC0CB522FF59432AAA0873CBB522CCCE2E3A6AF3997AA2B8E50CB'
-            signAlg = 'SHA256withECDSA'
-            profile file('D:\\Location Kit\\Location Service\\watch\\Sample_Key_new\\HarmonySample.p7b')
-            certpath file('D:\\Location Kit\\Location Service\\watch\\Sample_Key_new\\HarmonySample.cer')
         }
     }
     compileSdkVersion 5
