@@ -16,15 +16,6 @@ buildscript {
         maven {
             url 'https://developer.huawei.com/repo/'
         }
-        maven {
-            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-snapshot/'
-        }
-        maven {
-            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-release/'
-        }
-        maven {
-            url 'http://language.cloudartifact.dgg.dragon.tools.huawei.com/artifactory/product_maven/'
-        }
         jcenter()
     }
     dependencies {
@@ -42,15 +33,6 @@ allprojects {
         }
         maven {
             url 'https://developer.huawei.com/repo/'
-        }
-        maven {
-            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-snapshot/'
-        }
-        maven {
-            url 'http://szg1.artifactory.inhuawei.com/artifactory/Product-cloudserviceSDK-release/'
-        }
-        maven {
-            url 'http://language.cloudartifact.dgg.dragon.tools.huawei.com/artifactory/product_maven/'
         }
         jcenter()
     }
