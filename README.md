@@ -49,4 +49,4 @@ If you have problems using the sample code, submit [issues](https://github.com/H
 
 ##  License
 
-huawei-location-android-demo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+harmony-location-demo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
