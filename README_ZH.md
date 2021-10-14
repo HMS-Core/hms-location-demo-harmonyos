@@ -17,7 +17,7 @@
 华为定位示例代码封装了华为定位的API。它提供了许多示例程序供您参考或使用。
 
 ## 开始
-我们还提供了一个示例来演示用于Harmony的LocationKit SDK的使用。
+我们还提供了一个示例来演示用于HarmonyOS的LocationKit SDK的使用。
 此示例使用Gradle构建系统。
 首先，通过克隆此代码仓库或下载压缩包来演示。
 在DevEco Studio中，使用“打开现有的DevEco Studio项目”，选择“harmony-location-demo”的目录。
@@ -29,7 +29,7 @@
 2.使用DevEco Studio的功能将配置的项目安装到设备上。
 
 ## 支持环境
-鸿蒙手机已安装HMS Core (APK) 5.3.0及以上版本。
+HarmonyOS智能手表已安装HMS Core (APK) 6.0.0及以上版本。
 
 ## 样例代码
 1. 调用FusedLocationProviderClient的requestLocationUpdates添加定位请求。代码位置在src/main/java/com/huawei/sample/harmony/location/slice/RequestLocationCallbackAbilitySlice.java中
