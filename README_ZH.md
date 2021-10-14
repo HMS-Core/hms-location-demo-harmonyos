@@ -29,7 +29,7 @@
 2.使用DevEco Studio的功能将配置的项目安装到设备上。
 
 ## 支持环境
-HarmonyOS智能手表已安装HMS Core (APK) 6.0.0及以上版本。
+华为智能手表已安装HMS Core (APK) 6.0.0及以上版本。
 
 ## 样例代码
 1. 调用FusedLocationProviderClient的requestLocationUpdates添加定位请求。代码位置在src/main/java/com/huawei/sample/harmony/location/slice/RequestLocationCallbackAbilitySlice.java中
