@@ -28,7 +28,7 @@ You can use the "gradlew signReleaseHap" command to build the project directly.
 2. Use DevEco Studio to install the configured project on the device.  
 
 ## Supported Environments
-HMS Core (APK) 5.3.0 or later has been installed on the Harmony.  
+HMS Core (APK) 6.0.0 or later has been installed on the Harmony.  
 
 ## Sample Code
 1.Invoke requestLocationUpdates of FusedLocationProviderClient to add a location request. Code location in src/main/java/com/huawei/sample/harmony/location/slice/RequestLocationCallbackAbilitySlice.java
