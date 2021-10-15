@@ -57,7 +57,7 @@ public class GetLastLocationAbilitySlice extends BaseAbilitySlice implements Com
     }
 
     /**
-     * 获取最新的location信息
+     * Obtain the latest location information.
      */
     private void getLastLocation() {
         fusedLocationClient.getLastLocation()
@@ -78,7 +78,7 @@ public class GetLastLocationAbilitySlice extends BaseAbilitySlice implements Com
     }
 
     /**
-     * 获取携带地址语义的location信息
+     * Obtains location information that carries address semantics.
      */
     private void getLastLocationWithAddress() {
         fusedLocationClient.getLastLocationWithAddress(buildLocationRequest())
