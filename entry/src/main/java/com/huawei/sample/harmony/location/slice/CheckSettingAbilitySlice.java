@@ -63,7 +63,7 @@ public class CheckSettingAbilitySlice extends BaseAbilitySlice implements Compon
     }
 
     /**
-     * 检查配置项参数
+     * Checking Configuration Item Parameters
      */
     private void checkLocationSettings() {
         LocationRequest locationRequest = new LocationRequest();
