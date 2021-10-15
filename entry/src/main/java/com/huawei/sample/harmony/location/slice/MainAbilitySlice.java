@@ -72,7 +72,7 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
     }
 
     /**
-     * 开启location请求页面
+     * Opening the location request page
      */
     private void startLocationCallbackAbility() {
         String abilityName = bundleName + ".ability.RequestLocationCallbackAbility";
@@ -80,7 +80,7 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
     }
 
     /**
-     * 开启获取最新的定位页面
+     * Enable the latest location page.
      */
     private void startLastLocationAbility() {
         String abilityName = bundleName + ".ability.GetLastLocationAbility";
@@ -88,7 +88,7 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
     }
 
     /**
-     * 开启获取location状态页面
+     * The page for obtaining location status is displayed.
      */
     private void startLocationAvailabilityAbility() {
         String abilityName = bundleName + ".ability.GetLocationAvailabilityAbility";
@@ -96,7 +96,7 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
     }
 
     /**
-     * 开启获取设置页面
+     * Open the Get Settings page
      */
     private void startCheckSettingAbility() {
         String abilityName = bundleName + ".ability.CheckSettingAbility";
@@ -105,7 +105,8 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
 
     private void startAbility(String deviceId, String bundleName, String abilityName) {
         Intent intent = new Intent();
-        // 通过ElementName指定目标，构造器三个参数依次是：设备标识（空串表示当前设备）、应用包名、Ability全限定名称
+        // Specify the target through ElementName.
+        // The three parameters of the constructor are: device ID (an empty string indicates the current device), application package name, and mobility fully qualified name.
         ElementName name = new ElementName(deviceId, bundleName, abilityName);
         intent.setElement(name);
         printLog(HiLog.INFO, TAG, "abilityName = " + abilityName);
