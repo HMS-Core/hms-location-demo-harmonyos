@@ -24,7 +24,6 @@ import ohos.bundle.IBundleManager;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;

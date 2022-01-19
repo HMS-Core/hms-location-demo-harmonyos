@@ -107,7 +107,7 @@ public class RequestLocationCallbackAbilitySlice extends BaseAbilitySlice implem
         LocationRequest locationRequest = buildLocationRequest();
         printLog(HiLog.INFO, TAG, "requestLocationUpdates !! ");
         fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback)
-            .addOnSuccessListener(var -> {
+            .addOnSuccessListener(v -> {
                 String result = "requestLocationUpdatesWithCallback onSuccess";
                 printLog(HiLog.INFO, TAG, result);
                 printScreenLog(showLocation, result);
@@ -121,7 +121,7 @@ public class RequestLocationCallbackAbilitySlice extends BaseAbilitySlice implem
 
     private void removeLocationUpdates() {
         fusedLocationClient.removeLocationUpdates(locationCallback)
-            .addOnSuccessListener(var -> {
+            .addOnSuccessListener(v -> {
                 String result = "removeLocationUpdatesWithCallback onSuccess";
                 printLog(HiLog.INFO, TAG, result);
                 printScreenLog(showLocation, result);

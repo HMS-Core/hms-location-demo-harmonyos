@@ -11,6 +11,18 @@
     {
       "name": "mainability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "coordinateability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "coordinateability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_CoordinateAbility",
+      "value": "entry_CoordinateAbility"
     }
   ]
 }

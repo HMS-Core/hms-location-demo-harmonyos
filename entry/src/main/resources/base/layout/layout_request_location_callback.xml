@@ -35,7 +35,6 @@
                 ohos:padding="10vp"
                 ohos:text="RemoveLocationWithCallback"
                 ohos:text_size="25"/>
-
             <Text
                 ohos:id="$+id:show_location"
                 ohos:height="match_content"

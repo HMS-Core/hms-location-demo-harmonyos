@@ -39,6 +39,8 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
         findComponentById(ResourceTable.Id_btn_getLastLocation).setClickedListener(this);
         findComponentById(ResourceTable.Id_btn_getLocationAvailability).setClickedListener(this);
         findComponentById(ResourceTable.Id_btn_checkSetting).setClickedListener(this);
+        findComponentById(ResourceTable.Id_btn_geocoder).setClickedListener(this);
+        findComponentById(ResourceTable.Id_btn_coordinate).setClickedListener(this);
     }
 
     @Override
@@ -66,9 +68,20 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
             case ResourceTable.Id_btn_checkSetting:
                 startCheckSettingAbility();
                 break;
+            case ResourceTable.Id_btn_geocoder:
+                startGeocoderAbility();
+                break;
+            case ResourceTable.Id_btn_coordinate:
+                startCoordinateAbility();
+                break;
             default:
                 break;
         }
+    }
+
+    private void startGeocoderAbility() {
+        String abilityName = bundleName + ".ability.GeocoderAbility";
+        startAbility("", bundleName, abilityName);
     }
 
     /**
@@ -102,6 +115,12 @@ public class MainAbilitySlice extends BaseAbilitySlice implements Component.Clic
         String abilityName = bundleName + ".ability.CheckSettingAbility";
         startAbility("", bundleName, abilityName);
     }
+
+    private void startCoordinateAbility() {
+        String abilityName = bundleName + ".ability.CoordinateAbility";
+        startAbility("", bundleName, abilityName);
+    }
+
 
     private void startAbility(String deviceId, String bundleName, String abilityName) {
         Intent intent = new Intent();

@@ -72,17 +72,34 @@
         "name": "com.huawei.sample.harmony.location.ability.CheckSettingAbility",
         "description": "",
         "type": "page"
+      },
+      {
+        "orientation": "portrait",
+        "icon": "$media:icon",
+        "name": "com.huawei.sample.harmony.location.ability.GeocoderAbility",
+        "description": "",
+        "type": "page"
+      },
+      {
+        "orientation": "portrait",
+        "icon": "$media:icon",
+        "name": "com.huawei.sample.harmony.location.ability.CoordinateAbility",
+        "description": "",
+        "type": "page"
       }
     ],
     "reqPermissions": [
       {
-        "name": "ohos.permission.GET_NETWORK_INFO"
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "Allows programs to obtain network information status"
       },
       {
-        "name": "ohos.permission.LOCATION"
+        "name": "ohos.permission.LOCATION",
+        "reason": "Allows applications to obtain location information when running in the foreground."
       },
       {
-        "name": "ohos.permission.LOCATION_IN_BACKGROUND"
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+        "reason": "Allows applications to obtain location information when running in the background"
       }
     ]
   }

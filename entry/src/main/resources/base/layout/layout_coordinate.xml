@@ -1,0 +1,137 @@
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="32">
+
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        >
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <DirectionalLayout
+                ohos:id="$+id:reverseGeoCode_layout"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical">
+
+                <Button
+                    ohos:id="$+id:btn_change_coordinate"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:background_element="#FF51A8DD"
+                    ohos:layout_alignment="horizontal_center"
+                    ohos:margin="5vp"
+                    ohos:padding="10vp"
+                    ohos:text="ChangeCoordinate"
+                    ohos:text_size="25"/>
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:orientation="horizontal">
+
+                    <Text
+                        ohos:height="match_parent"
+                        ohos:width="0vp"
+                        ohos:weight="1"
+                        ohos:padding="5vp"
+                        ohos:text="latitude:"
+                        />
+
+                    <TextField
+                        ohos:id="$+id:coordinate_latitude_field"
+                        ohos:height="match_parent"
+                        ohos:width="0vp"
+                        ohos:weight="1"
+                        ohos:padding="5vp"
+                        ohos:hint="latitude"
+                        ohos:layout_alignment="horizontal_center"
+                        ohos:text="39.985071"
+                        ohos:text_size="25"
+                        />
+                </DirectionalLayout>
+
+                <Component
+                    ohos:height="1vp"
+                    ohos:width="match_content"
+                    ohos:background_element="#FF888888"/>
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:orientation="horizontal">
+
+                    <Text
+                        ohos:height="match_parent"
+                        ohos:width="0vp"
+                        ohos:weight="1"
+                        ohos:padding="5vp"
+                        ohos:text="longitude:"
+                        />
+
+                    <TextField
+                        ohos:id="$+id:coordinate_longitude_field"
+                        ohos:height="match_parent"
+                        ohos:width="0vp"
+                        ohos:weight="1"
+                        ohos:padding="5vp"
+                        ohos:hint="longitude"
+                        ohos:layout_alignment="horizontal_center"
+                        ohos:text="116.501717"
+                        ohos:text_size="25"
+                        />
+                </DirectionalLayout>
+
+                <Component
+                    ohos:height="1vp"
+                    ohos:width="match_content"
+                    ohos:background_element="#FF888888"/>
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:orientation="horizontal">
+
+                    <Text
+                        ohos:height="match_parent"
+                        ohos:width="0vp"
+                        ohos:weight="1"
+                        ohos:padding="5vp"
+                        ohos:text="coordinateType:"
+                        />
+
+                    <TextField
+                        ohos:id="$+id:coordinateType_field"
+                        ohos:height="match_parent"
+                        ohos:width="0vp"
+                        ohos:weight="1"
+                        ohos:padding="5vp"
+                        ohos:hint="coordinateType"
+                        ohos:layout_alignment="horizontal_center"
+                        ohos:text="1"
+                        ohos:text_size="25"
+                        />
+                </DirectionalLayout>
+                <Component
+                    ohos:height="1vp"
+                    ohos:width="match_content"
+                    ohos:background_element="#FF888888"/>
+            </DirectionalLayout>
+            <Text
+                ohos:id="$+id:show_location"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:layout_alignment="horizontal_center"
+                ohos:margin="5vp"
+                ohos:text_size="25"
+                />
+        </DirectionalLayout>
+    </ScrollView>
+</DirectionalLayout>

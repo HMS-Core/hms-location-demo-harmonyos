@@ -1,4 +1,4 @@
-## HUAWEI Location Kit Sample for HarmonyOS
+# HMS Core Location Kit Sample for HarmonyOS
 
 English | [中文](README_ZH.md)
 
