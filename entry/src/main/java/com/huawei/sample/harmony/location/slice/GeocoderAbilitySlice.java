@@ -150,6 +150,8 @@ public class GeocoderAbilitySlice extends BaseAbilitySlice implements Component.
                 new GetFromLocationNameRequest(addressName, lowerLeftLatitude, lowerLeftLongitude, upperRightLatitude, upperRightLongitude, maxResult);
         Locale locale = new Locale(languageText, countryText);
         GeocoderProviderClient geocoderService = new GeocoderProviderClient(this, locale);
+        // Enter the correct location information. Otherwise, the geographic information cannot be parsed. For a
+        // non-China region, transfer the location information of the non-China region.
         geocoderService.getFromLocationName(getFromLocationNameRequest)
                 .addOnSuccessListener((OnSuccessListener<List<HWLocation>>)
                         geocoderLocationList -> {
@@ -189,6 +191,9 @@ public class GeocoderAbilitySlice extends BaseAbilitySlice implements Component.
         }
         final String languageText = language.getText();
         final String countryText = country.getText();
+        // Enter a proper region longitude and latitude. Otherwise, no geographic information is returned. If a
+        // non-China region is used, transfer the longitude and latitude of the non-China region and ensure that
+        // the longitude and latitude are correct.
         GetFromLocationRequest getFromLocationRequest = new GetFromLocationRequest(latitude, longitude, maxResult);
         Locale locale = new Locale(languageText, countryText);
         GeocoderProviderClient geocoderProviderClient = new GeocoderProviderClient(this, locale);
