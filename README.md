@@ -31,9 +31,7 @@ HMS Core (APK) 6.0.0 or later has been installed on the Huawei Smartwatch.
 1.Invoke requestLocationUpdates of FusedLocationProviderClient to add a location request. Code location in src/main/java/com/huawei/sample/harmony/location/slice/RequestLocationCallbackAbilitySlice.java
 
 ## Result
-<img src="images/home.png" width = 20% height = 20%>
-<img src="images/get_last_location.png" width = 20% height = 20%>
-<img src="images/request_location.png" width = 20% height = 20%>
+<img src="images/home.png" width = 20% height = 20%> <img src="images/get_last_location.png" width = 20% height = 20%> <img src="images/request_location.png" width = 20% height = 20%>
 
 ##  License
 harmony-location-demo is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
