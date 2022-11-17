@@ -36,6 +36,39 @@
                 ohos:text="GetLastLocationWithAddress"
                 ohos:text_size="25"/>
 
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:padding="5">
+
+                <Text
+                    ohos:id="$+id:tv_coordinateType"
+                    ohos:height="match_content"
+                    ohos:width="0vp"
+                    ohos:layout_alignment="horizontal_center"
+                    ohos:text="CoordinateType:"
+                    ohos:text_size="25"
+                    ohos:weight="1"/>
+
+                <TextField
+                    ohos:id="$+id:et_coordinateType"
+                    ohos:height="match_content"
+                    ohos:width="0vp"
+                    ohos:hint="默认0-84坐标，1-02坐标"
+                    ohos:layout_alignment="horizontal_center"
+                    ohos:text=""
+                    ohos:text_input_type="pattern_number"
+                    ohos:text_size="25"
+                    ohos:weight="1"/>
+
+            </DirectionalLayout>
+
+            <Component
+                ohos:height="1vp"
+                ohos:width="match_content"
+                ohos:background_element="#FF888888"/>
+
             <Text
                 ohos:id="$+id:show_location"
                 ohos:height="match_content"

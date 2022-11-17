@@ -73,16 +73,6 @@
                 ohos:text_size="25"/>
 
             <Button
-                ohos:id="$+id:btn_geocoder"
-                ohos:height="match_content"
-                ohos:width="match_parent"
-                ohos:background_element="#FF51A8DD"
-                ohos:layout_alignment="horizontal_center"
-                ohos:margin="5vp"
-                ohos:padding="10vp"
-                ohos:text="Geocoder"
-                ohos:text_size="25"/>
-            <Button
                 ohos:id="$+id:btn_coordinate"
                 ohos:height="match_content"
                 ohos:width="match_parent"

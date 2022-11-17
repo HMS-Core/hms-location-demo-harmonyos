@@ -33,6 +33,6 @@ sourceSets {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
     testCompile 'junit:junit:4.13.2'
-    implementation 'com.huawei.hms:location-harmony:6.3.0.300'
     implementation 'com.huawei.agconnect:agconnect-core-harmony:1.1.0.300'
+    implementation 'com.huawei.hms:location-harmony:6.7.0.300'
 }

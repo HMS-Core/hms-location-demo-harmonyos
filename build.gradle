@@ -11,17 +11,16 @@ ohos {
 buildscript {
     repositories {
         maven {
-            url 'https://repo.huaweicloud.com/repository/maven/'
-        }
-        maven {
             url 'https://developer.huawei.com/repo/'
         }
+		google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.huawei.ohos:hap:2.4.4.2'
         classpath 'com.huawei.ohos:decctest:1.2.4.0'
-        // Adding the dependency of the agconnect service
+        // 添加agconnect服务依赖
         classpath 'com.huawei.agconnect:agcp-harmony:1.1.0.300'
     }
 }
@@ -29,11 +28,10 @@ buildscript {
 allprojects {
     repositories {
         maven {
-            url 'https://repo.huaweicloud.com/repository/maven/'
-        }
-        maven {
             url 'https://developer.huawei.com/repo/'
         }
+		google()
         jcenter()
+        mavenCentral()
     }
 }
