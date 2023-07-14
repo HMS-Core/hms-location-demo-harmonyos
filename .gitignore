@@ -13,3 +13,4 @@
 .externalNativeBuild
 /entry/.preview
 .cxx
+/.idea/
